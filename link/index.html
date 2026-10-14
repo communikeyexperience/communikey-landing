@@ -161,7 +161,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--y);outline-offset:3
       <span class="arr" aria-hidden="true">→</span>
     </a>
 
-    <a class="card row" id="vcf" href="#" download="Com-Key-Experience.vcf">
+    <a class="card row" href="contatto.vcf">
       <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3"/><path d="M3 19c.8-2.9 3.2-4.5 6-4.5s5.2 1.6 6 4.5"/><path d="M18 8v6M15 11h6"/></svg></span>
       <span class="t"><strong>Salva il contatto</strong><small>Aggiungilo alla rubrica del telefono</small></span>
       <span class="arr" aria-hidden="true">↓</span>
@@ -176,19 +176,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--y);outline-offset:3
 (function(){
   var WA_TEXT = "Buongiorno, vi sto contattando per la consulenza iniziale di Com & Key Experience. Vorrei raccontarvi la situazione della mia azienda, chi sono e dove voglio arrivare.";
   document.getElementById('wa').href = 'https://wa.me/393484925505?text=' + encodeURIComponent(WA_TEXT);
-
-  var vcf = [
-    'BEGIN:VCARD','VERSION:3.0',
-    'N:;Com & Key Experience;;;','FN:Com & Key Experience','ORG:Com & Key Experience',
-    'item1.TEL;TYPE=CELL:+393484925505','item1.X-ABLabel:Federico',
-    'item2.TEL;TYPE=CELL:+393289655848','item2.X-ABLabel:Cristiano',
-    'EMAIL;TYPE=INTERNET:communikeyexperience@gmail.com',
-    'URL:https://communikey-experience.it/',
-    'NOTE:AI e Strategia per l\'Evoluzione Aziendale\\nFederico: +39 348 49 25 505\\nCristiano: +39 328 965 5848',
-    'END:VCARD'
-  ].join('\r\n');
-  var v = document.getElementById('vcf');
-  v.href = URL.createObjectURL(new Blob([vcf], {type:'text/vcard'}));
 
   var toast = document.getElementById('toast'), t;
   function say(m){ toast.textContent = m; toast.classList.add('on'); clearTimeout(t); t = setTimeout(function(){ toast.classList.remove('on'); }, 2000); }
