@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Com &amp; Key Experience · Link</title>
+<meta name="description" content="AI e Strategia per l'Evoluzione Aziendale. Affianchiamo imprenditori e aziende nelle decisioni che orientano il futuro del loro business.">
+<meta name="theme-color" content="#12071A">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Com & Key Experience">
+<meta property="og:description" content="AI e Strategia per l'Evoluzione Aziendale.">
+<meta property="og:image" content="https://communikey-experience.it/assets/og-image.jpg">
+<link rel="icon" href="assets/icona.webp">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/archivo-normal-400-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+:root{
+  --ink:#12071A; --plum:#4A1466; --violet:#8A2DAA; --mag:#C72D88;
+  --y:#FFE27A; --o:#FF9F1C;
+  --txt:#fff; --mute:rgba(255,255,255,.72); --line:rgba(255,255,255,.14);
+  --card:rgba(255,255,255,.06); --card-h:rgba(255,255,255,.11);
+  --grad:linear-gradient(90deg,var(--y),var(--o) 50%,var(--mag));
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;background:var(--ink)}
+body{
+  min-height:100dvh;color:var(--txt);
+  font:400 16px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:linear-gradient(180deg,var(--ink) 0%,#2a0c3b 38%,var(--plum) 72%,#7a1f6e 100%) fixed;
+  background-color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:460px;margin:0 auto;padding:max(14px,env(safe-area-inset-top)) 16px max(40px,env(safe-area-inset-bottom))}
+
+/* barra superiore */
+.top{display:flex;justify-content:flex-end;height:44px}
+.icon-btn{
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:var(--card);color:#fff;display:grid;place-items:center;cursor:pointer;
+  transition:background .2s,transform .15s;
+}
+.icon-btn:active{transform:scale(.94)}
+.icon-btn svg{width:19px;height:19px}
+
+/* profilo */
+.head{text-align:center;padding:6px 4px 26px}
+.avatar{
+  width:96px;height:96px;border-radius:50%;margin:0 auto 18px;display:block;
+  box-shadow:0 0 0 3px rgba(255,255,255,.12),0 12px 40px -8px rgba(199,45,136,.7);
+}
+.wordmark{width:min(78%,300px);height:auto;display:block;margin:18px auto 22px}
+h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.kicker{
+  font:500 10.5px/1.4 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:14px;
+}
+.bio{color:var(--mute);font-size:15px;max-width:36ch;margin:0 auto}
+.bio b{color:#fff;font-weight:600}
+
+/* link */
+.links{display:grid;gap:12px}
+.card{
+  display:block;border-radius:var(--r);overflow:hidden;
+  background:var(--card);border:1px solid var(--line);
+  transition:background .2s,transform .15s,border-color .2s;
+}
+.card:hover{background:var(--card-h);border-color:rgba(255,255,255,.24)}
+.card:active{transform:scale(.985)}
+.card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover}
+.card .cap{display:flex;align-items:center;gap:12px;padding:14px 16px}
+.cap .t{flex:1;min-width:0}
+.cap strong{display:block;font:800 16px/1.25 Archivo,Inter,sans-serif}
+.cap small{display:block;color:var(--mute);font-size:13px;margin-top:2px}
+.arr{flex:none;opacity:.7;font-size:18px}
+
+.row{display:flex;align-items:center;gap:14px;min-height:62px;padding:12px 16px}
+.row .ic{
+  flex:none;width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+  background:rgba(255,255,255,.08);
+}
+.row .ic svg{width:20px;height:20px}
+.row .t{flex:1;min-width:0}
+.row strong{display:block;font-weight:600;font-size:15.5px}
+.row small{display:block;color:var(--mute);font-size:13px}
+
+/* call: bottone principale */
+.cta{
+  background:var(--grad);border:0;color:var(--ink);
+  box-shadow:0 14px 34px -14px rgba(255,159,28,.8);
+}
+.cta:hover{background:var(--grad);filter:brightness(1.05)}
+.cta .ic{background:rgba(18,7,26,.14)}
+.cta small{color:rgba(18,7,26,.72)}
+.cta strong{font:800 16px/1.25 Archivo,Inter,sans-serif}
+
+.zk{font-family:Archivo,sans-serif;font-weight:900;font-stretch:125%}
+.zk sup{font-size:.5em;vertical-align:super;margin-left:1px}
+
+.sep{
+  display:flex;align-items:center;gap:10px;margin:14px 2px 2px;
+  font:500 10px/1 "DM Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);
+}
+.sep::after{content:"";flex:1;height:1px;background:var(--line)}
+.sep i{width:6px;height:6px;border-radius:50%;background:var(--o)}
+
+
+.toast{
+  position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom));transform:translate(-50%,20px);
+  background:#fff;color:var(--ink);font-weight:600;font-size:14px;padding:10px 16px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:.25s;
+}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--y);outline-offset:3px}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <button class="icon-btn" id="share" type="button" aria-label="Condividi questa pagina">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="m7 8 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+    </button>
+  </div>
+
+  <header class="head">
+    <h1>Com &amp; Key Experience</h1>
+    <img class="wordmark" src="assets/logo.webp" alt="Com &amp; Key Experience" width="485" height="150">
+    <p class="kicker">Strategic Intelligence · Direction</p>
+    <p class="bio"><b>AI e Strategia per l'Evoluzione Aziendale.</b> Affianchiamo imprenditori e aziende nelle decisioni che orientano il futuro del loro business.</p>
+  </header>
+
+  <main class="links">
+    <a class="card" href="https://communikey-experience.it/" target="_blank" rel="noopener">
+      <img src="assets/comkey.webp" alt="" width="800" height="420" loading="eager">
+      <span class="cap"><span class="t"><strong>Com &amp; Key Experience</strong><small>AI e Strategia per l'Evoluzione Aziendale</small></span><span class="arr" aria-hidden="true">↗</span></span>
+    </a>
+
+    <a class="card" href="https://zirkonia.ai/" target="_blank" rel="noopener">
+      <img src="assets/zirkonia.webp" alt="" width="800" height="420" loading="lazy">
+      <span class="cap"><span class="t"><strong><span class="zk">ZirkonIA<sup>™</sup></span></strong><small>Il second brain per imprenditori e professionisti</small></span><span class="arr" aria-hidden="true">↗</span></span>
+    </a>
+
+    <p class="sep"><i></i>Contatti</p>
+
+    <a class="card cta row" id="wa" href="https://wa.me/393484925505" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.5-.8-2.2-1.4-.6-.5-1-1.1-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></span>
+      <span class="t"><strong>Candidati per una call</strong><small>Raccontaci la tua impresa su WhatsApp</small></span>
+      <span class="arr" aria-hidden="true">→</span>
+    </a>
+
+    <a class="card row" href="mailto:communikeyexperience@gmail.com">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+      <span class="t"><strong>Scrivici una email</strong><small>communikeyexperience@gmail.com</small></span>
+      <span class="arr" aria-hidden="true">→</span>
+    </a>
+
+    <a class="card row" id="vcf" href="#" download="Com-Key-Experience.vcf">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3"/><path d="M3 19c.8-2.9 3.2-4.5 6-4.5s5.2 1.6 6 4.5"/><path d="M18 8v6M15 11h6"/></svg></span>
+      <span class="t"><strong>Salva il contatto</strong><small>Aggiungilo alla rubrica del telefono</small></span>
+      <span class="arr" aria-hidden="true">↓</span>
+    </a>
+  </main>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var WA_TEXT = "Buongiorno, vi sto contattando per la consulenza iniziale di Com & Key Experience. Vorrei raccontarvi la situazione della mia azienda, chi sono e dove voglio arrivare.";
+  document.getElementById('wa').href = 'https://wa.me/393484925505?text=' + encodeURIComponent(WA_TEXT);
+
+  var vcf = [
+    'BEGIN:VCARD','VERSION:3.0',
+    'N:;Com & Key Experience;;;','FN:Com & Key Experience','ORG:Com & Key Experience',
+    'item1.TEL;TYPE=CELL:+393484925505','item1.X-ABLabel:Federico',
+    'item2.TEL;TYPE=CELL:+393289655848','item2.X-ABLabel:Cristiano',
+    'EMAIL;TYPE=INTERNET:communikeyexperience@gmail.com',
+    'URL:https://communikey-experience.it/',
+    'NOTE:AI e Strategia per l\'Evoluzione Aziendale\\nFederico: +39 348 49 25 505\\nCristiano: +39 328 965 5848',
+    'END:VCARD'
+  ].join('\r\n');
+  var v = document.getElementById('vcf');
+  v.href = URL.createObjectURL(new Blob([vcf], {type:'text/vcard'}));
+
+  var toast = document.getElementById('toast'), t;
+  function say(m){ toast.textContent = m; toast.classList.add('on'); clearTimeout(t); t = setTimeout(function(){ toast.classList.remove('on'); }, 2000); }
+
+  document.getElementById('share').addEventListener('click', function(){
+    var data = { title:'Com & Key Experience', text:"AI e Strategia per l'Evoluzione Aziendale", url:location.href };
+    if (navigator.share) { navigator.share(data).catch(function(){}); return; }
+    try { navigator.clipboard.writeText(location.href).then(function(){ say('Link copiato'); }, function(){ say(location.href); }); }
+    catch(e){ say(location.href); }
+  });
+})();
+</script>
+</body>
+</html>
